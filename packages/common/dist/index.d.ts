@@ -8,5 +8,4 @@
  * @format
  */
 /// <reference types="react" />
-declare const App: () => JSX.Element;
-export default App;
+export declare const App: () => JSX.Element;
