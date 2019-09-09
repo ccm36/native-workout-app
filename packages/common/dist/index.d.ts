@@ -7,5 +7,5 @@
  *
  * @format
  */
-import React from 'react';
-export declare const App: React.NamedExoticComponent<{}>;
+/// <reference types="react" />
+export declare const App: () => JSX.Element;
