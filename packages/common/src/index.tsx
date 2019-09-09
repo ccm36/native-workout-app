@@ -8,25 +8,28 @@
  * @format
  */
 
-import React, { useState, Fragment } from 'react';
+import React, { useState, Fragment, useContext } from 'react';
 import {
   StyleSheet,
   View,
   Button,
   Text
 } from 'react-native';
+import { observer } from "mobx-react-lite";
+import { CounterStoreContext } from './stores/CounterStore';
 
-export const App = () => {
-
-  const [count, setCount] = useState(0)
+export const App = observer(() => {
+  const counterStore = useContext(CounterStoreContext);
 
   return (
       <View>
-        <Text>Count: {count}</Text>
-        <Button title="increment" onPress={() => setCount(count + 1)}/>
+        <Text>Welcome to the Workout App!</Text>
+        <Text>Count: {counterStore.count}</Text>
+        <Button title="increment" onPress={() => counterStore.count++}/>
+        <Text>Welcome to the Workout App!</Text>
       </View>
   );
-};
+});
 
 // const styles = StyleSheet.create({
 //   engine: {
