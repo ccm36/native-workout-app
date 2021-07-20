@@ -12,7 +12,7 @@
   "dependencies": {
     "@workout/common": "1.0.0",
     "react": "16.8.6",
-    "react-native": "0.60.5"
+    "react-native": "0.62.3"
   },
   "devDependencies": {
     "@workout/common": "1.0.0",
